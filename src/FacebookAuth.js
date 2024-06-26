@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import './FacebookAuth.css';
 
 const FacebookAuth = ({ onLogin }) => {
   useEffect(() => {
@@ -43,8 +44,8 @@ const FacebookAuth = ({ onLogin }) => {
   };
 
   return (
-    <div>
-      <button onClick={handleLogin}>Login with Facebook</button>
+    <div className="facebook-auth">
+      <button className="facebook-button" onClick={handleLogin}>Login with Facebook</button>
     </div>
   );
 };

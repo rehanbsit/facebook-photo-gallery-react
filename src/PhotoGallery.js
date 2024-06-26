@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './PhotoGallery.css';
 
 const PhotoGallery = ({ accessToken }) => {
   const [photos, setPhotos] = useState([]);
@@ -16,11 +17,11 @@ const PhotoGallery = ({ accessToken }) => {
 
   console.log(photos);
   return (
-    <div>
+    <div className="photo-gallery">
       <h1>Your Facebook Photos</h1>
-      <div>
+      <div className="photos">
         {photos.map(photo => (
-          <div key={photo.id}>
+          <div key={photo.id} className="photo">
             <img src={photo.images[0].source} alt={photo.name || 'Photo'} />
           </div>
         ))}

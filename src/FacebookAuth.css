@@ -1,0 +1,22 @@
+.facebook-auth {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .facebook-button {
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .facebook-button:hover {
+    background-color: #365899;
+  }
+  
